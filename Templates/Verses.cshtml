@@ -20,7 +20,7 @@
 <body>
     <div data-role="page">
         <div data-role="header" data-position="fixed">
-            <a href="../../index.html" data-icon="home" data-iconpos="notext" data-shadow="false"></a>
+            <a href="../../index.html" data-icon="home" data-iconpos="notext" data-shadow="false" data-ajax="false"></a>
             <h1>@Model.Name</h1>            
 			<div class="ui-btn-right" data-role="controlgroup" data-type="horizontal" data-mini="true">
 				<input type="checkbox" name="english" id="english" data-mini="true">
@@ -63,11 +63,11 @@
 			    <ul>
                     @if (Model.HasBack)
                     {
-				    <li><a href="@Model.BackPath" data-icon="arrow-l"></a></li>
+				    <li><a href="@Model.BackPath" data-icon="arrow-l" data-ajax="false"></a></li>
                     }
                     @if (Model.HasForward)
                     {
-				    <li><a href="@Model.ForwardPath" data-icon="arrow-r"></a></li>
+				    <li><a href="@Model.ForwardPath" data-icon="arrow-r" data-ajax="false"></a></li>
                     }
 			    </ul>
 		    </div>

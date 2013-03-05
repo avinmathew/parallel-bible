@@ -84,7 +84,7 @@ namespace BibleDownload
                             backBook--;
                             backChapter = Book.ChaptersPerBook[backBook];
                         }
-                        bookChapter.BackPath = string.Format("/{0}/{1}", backBook, backChapter);
+                        bookChapter.BackPath = string.Format("../../{0}/{1}/index.html", backBook, backChapter);
                     }
                     if (englishBook.Id == 66 && englishChapter.Id == 22)
                     {
@@ -99,7 +99,7 @@ namespace BibleDownload
                             forwardBook++;
                             forwardChapter = 1;
                         }
-                        bookChapter.ForwardPath = string.Format("/{0}/{1}", forwardBook, forwardChapter);
+                        bookChapter.ForwardPath = string.Format("../../{0}/{1}/index.html", forwardBook, forwardChapter);
                     }
 
                     int maxVerses = Math.Max(Math.Max(englishChapter.Verses.Count, malayalamChapter.Verses.Count), hindiChapter.Verses.Count);

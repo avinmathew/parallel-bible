@@ -15,7 +15,7 @@
             });
             $.each(['english', 'malayalam', 'hindi'], function (index, value) {
                 if ($.cookie(value) == 'false')
-                    $('input[type=checkbox][name=' + value + ']').change().removeAttr('checked');
+                    $('input[type=checkbox][name=' + value + ']').removeAttr('checked').change();
             });
         });
     </script>
